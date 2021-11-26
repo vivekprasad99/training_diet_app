@@ -31,30 +31,21 @@ class ProfileScreen extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 8.0),
                 child: Icon(Icons.home),
               ),
-              title: Text(
-                "Home",
-                style: const TextStyle(color: Colors.white),
-              ),
+              label: "Home",
             ),
             BottomNavigationBarItem(
               icon: Padding(
                 child: Icon(Icons.search),
                 padding: const EdgeInsets.only(top: 8.0),
               ),
-              title: Text(
-                "Search",
-                style: const TextStyle(color: Colors.white),
-              ),
+              label: "Search",
             ),
             BottomNavigationBarItem(
               icon: Padding(
                 child: Icon(Icons.person),
                 padding: const EdgeInsets.only(top: 8.0),
               ),
-              title: Text(
-                "Profile",
-                style: const TextStyle(color: Colors.white),
-              ),
+              label: "Profile",
             ),
           ],
         ),
@@ -497,7 +488,7 @@ class _MealCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    SizedBox(height: 5),
+                    SizedBox(height: 1),
                     Text(
                       meal.mealTime,
                       style: const TextStyle(
